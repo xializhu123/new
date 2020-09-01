@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>JS调用现成Word模板完成打印</title>
+    <script type="text/javascript"> 
+    //OpenWord("https://orgoss1.vvwx.net/1f0e3dad99908345f7439f8ffabdffc4/Courseware/721eb95bb10099c1128fdb10162e76fb.doc",1)
+    function OpenWord(url, IsPreview) {
+        // window.print();
+//     try {
+//         var wordApp = new ActiveXObject("word.application");
+//         wordApp.visible = true;
+//         wordApp.activate();
+//     }
+//     catch (e) {
+//         alert("浏览器的当前安全属性不允许创建Word对象，请正确设置浏览器的安全属性！" + e);
+//         return;
+//     }
+//     try {
+//   var mydoc;
+//         mydoc=wordApp.documents.open(url);
+//         if (IsPreview) {
+//             mydoc.PrintPreview();
+//         }
+//     }
+//     catch (e) {
+//         alert("您访问的文档地址无效或您的网络已断开连接，请检查后重试！");
+//         return;
+//     } 
+}
+    </script>
+    <style>
+        @media print{
+        .noprint{display:none;}
+       }
+    </style>
+</head>
+<body>
+    <h1>kkdkdkdk</h1>
+        <span class="noprint">66666666666666666</span>
+   
+    <el-button type="button" onclick="window.print()">打印</el-button>
+    <!-- <iframe frameborder="0" width='100%' height="100%" id="printContainer1" style="" src="https://orgoss1.vvwx.net/1f0e3dad99908345f7439f8ffabdffc4/Courseware/721eb95bb10099c1128fdb10162e76fb.doc"></iframe>  -->
+</body>
+</html>
